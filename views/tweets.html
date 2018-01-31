@@ -1,0 +1,12 @@
+{% extends './layout.html' %}
+{% block content %}
+ <ul>
+    {% for person in people %}
+        <li>
+        <a href='/tweets/{{person.id}}'>
+        {{ person.name }}
+        </a> 
+        </li>
+    {% endfor %}
+ </ul>
+{% endblock %}
